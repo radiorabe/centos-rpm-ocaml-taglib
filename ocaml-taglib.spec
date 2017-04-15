@@ -1,14 +1,15 @@
 Name:     ocaml-taglib
 
-Version:  0.3.2
+Version:  0.3.3
 Release:  1
 Summary:  OCaml bindings for the taglib
 License:  GPLv2+
 URL:      https://github.com/savonet/ocaml-taglib
-Source0:  https://github.com/savonet/ocaml-taglib/releases/download/0.3.2/ocaml-taglib-0.3.2.tar.gz
+Source0:  https://github.com/savonet/ocaml-taglib/releases/download/%{version}/ocaml-taglib-%{version}.tar.gz
 
 BuildRequires: ocaml
 BuildRequires: ocaml-findlib
+BuildRequires: gcc-c++
 BuildRequires: taglib-devel
 Requires:      taglib
 
@@ -46,5 +47,8 @@ OCaml interface for TagLib Audio Meta-Data Library, otherwise known as taglib.
 
 
 %changelog
+* Sat Apr 15 2017 Lucas Bickel <hairmare@rabe.ch>
+- Bump version
+
 * Sun Jul  3 2016 Lucas Bickel <hairmare@rabe.ch>
 - initial version, mostly stolen from https://www.openmamba.org/showfile.html?file=/pub/openmamba/devel/specs/ocaml-taglib.spec
