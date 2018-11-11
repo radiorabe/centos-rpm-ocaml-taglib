@@ -1,7 +1,9 @@
+%define debug_package %{nil}
+
 Name:     ocaml-taglib
 
 Version:  0.3.3
-Release:  1
+Release:  2
 Summary:  OCaml bindings for the taglib
 License:  GPLv2+
 URL:      https://github.com/savonet/ocaml-taglib
@@ -47,6 +49,9 @@ OCaml interface for TagLib Audio Meta-Data Library, otherwise known as taglib.
 
 
 %changelog
+* Sun Nov 11 2018 Lucas Bickel <hairmare@rabe.ch> - 0.3.3-2
+- Fix Fedora build by disabling debug package
+
 * Sat Apr 15 2017 Lucas Bickel <hairmare@rabe.ch>
 - Bump version
 
