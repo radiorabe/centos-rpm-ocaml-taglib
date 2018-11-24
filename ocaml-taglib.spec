@@ -2,8 +2,8 @@
 
 Name:     ocaml-taglib
 
-Version:  0.3.3
-Release:  2
+Version:  0.3.5
+Release:  0.0%{dist}
 Summary:  OCaml bindings for the taglib
 License:  GPLv2+
 URL:      https://github.com/savonet/ocaml-taglib
@@ -34,21 +34,26 @@ install -d $OCAMLFIND_DESTDIR/%{ocamlpck}
 make install
 
 %files
-/usr/lib64/ocaml/taglib/META
-/usr/lib64/ocaml/taglib/dlltaglib_stubs.so
-/usr/lib64/ocaml/taglib/libtaglib_stubs.a
-/usr/lib64/ocaml/taglib/taglib.a
-/usr/lib64/ocaml/taglib/taglib.cma
-/usr/lib64/ocaml/taglib/taglib.cmi
-/usr/lib64/ocaml/taglib/taglib.cmx
-/usr/lib64/ocaml/taglib/taglib.cmxa
-/usr/lib64/ocaml/taglib/taglib.mli
+%{_libdir}/ocaml/taglib/
+%{_libdir}/ocaml/taglib/META
+%{_libdir}/ocaml/taglib/dlltaglib_stubs.so
+%{_libdir}/ocaml/taglib/libtaglib_stubs.a
+%{_libdir}/ocaml/taglib/taglib.a
+%{_libdir}/ocaml/taglib/taglib.cma
+%{_libdir}/ocaml/taglib/taglib.cmi
+%{_libdir}/ocaml/taglib/taglib.cmx
+%{_libdir}/ocaml/taglib/taglib.cmxa
+%{_libdir}/ocaml/taglib/taglib.mli
 
 %description
 OCaml interface for TagLib Audio Meta-Data Library, otherwise known as taglib.
 
 
 %changelog
+* Fri Nov 23 2018 Lucas Bickel <hairmare@rabe.ch> - 0.3.5-0.0
+- Bump to 0.3.5
+- Start cleaning up files section
+
 * Sun Nov 11 2018 Lucas Bickel <hairmare@rabe.ch> - 0.3.3-2
 - Fix Fedora build by disabling debug package
 
