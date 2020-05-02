@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 Name:     ocaml-taglib
-Version:  0.3.5
+Version:  0.3.6
 Release:  0.1%{dist}
 Summary:  OCaml bindings for the taglib
 
@@ -69,6 +69,9 @@ make install
 %endif
 
 %changelog
+* Sat May  2 2020 Lucas Bickel <hairmare@rabe.ch> - 0.3.6-0.1
+* Bump to 0.3.6
+
 * Mon Dec 10 2018 Lucas Bickel <hairmare@rabe.ch> - 0.3.5-0.1
 - Cleanup and add separate -devel subpackage
 
